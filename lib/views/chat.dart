@@ -23,7 +23,7 @@ class _ChatState extends State<Chat> {
 
   Widget chatMessages(){
     return Container(
-      alignment: FractionalOffset.center,
+      alignment: Alignment.bottomCenter,
       margin: EdgeInsets.only(bottom: 70),
       child: StreamBuilder(
         stream: chats,
@@ -83,7 +83,7 @@ class _ChatState extends State<Chat> {
       body: Container(
         child: Stack(
           fit: StackFit.loose,
-          alignment: AlignmentDirectional.bottomStart,
+            alignment: Alignment.bottomCenter,
           children: [
             chatMessages(),
             Container(alignment: Alignment.bottomCenter,

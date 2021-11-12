@@ -115,7 +115,7 @@ class _ChatRoomsTileState extends State<ChatRoomsTile> {
     getUid();
   }
 
-  getUid() async{
+  getUid() async {
     String uid = widget.userName;
     QuerySnapshot snapshot = await FirebaseFirestore.instance
         .collection("users")
@@ -134,10 +134,8 @@ class _ChatRoomsTileState extends State<ChatRoomsTile> {
           Navigator.push(
               context,
               MaterialPageRoute(
-                  builder: (context) => Chat(
-                        chatRoomId: widget.chatRoomId,
-                        receiver: name
-                      )));
+                  builder: (context) =>
+                      Chat(chatRoomId: widget.chatRoomId, receiver: name)));
         },
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 12, vertical: 5),
@@ -155,22 +153,26 @@ class _ChatRoomsTileState extends State<ChatRoomsTile> {
                     color: CustomTheme.colorAccent,
                     borderRadius: BorderRadius.circular(20)),
                 child: Center(
-                  child: Text(name.substring(0, 1),
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500)),
+                  child: Text(
+                    name.substring(0, 1),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
               ),
               SizedBox(
                 width: 12,
               ),
-              Text(name,
-                  textAlign: TextAlign.start,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w300))
+              Text(
+                name,
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w300),
+              )
             ],
           ),
         ));
