@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "463761868743",
+    "project_id": "unitext-bd",
+    "storage_bucket": "unitext-bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463761868743:android:84c6416177aef77c7c7be2",
+        "android_client_info": {
+          "package_name": "com.bashar.unitext"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463761868743-ai0kfiavi108l2hmhjsqus00nevsml9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiYx5mmDUqml4FomYDhZeYI5jPtXUG2r4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463761868743-ai0kfiavi108l2hmhjsqus00nevsml9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
